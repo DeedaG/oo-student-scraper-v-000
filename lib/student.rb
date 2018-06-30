@@ -24,7 +24,7 @@ class Student
 
 
   def add_student_attributes(student_profile)
-    Scraper.scrape_profile_page(profile_url)
+    
       student_profile.each do |k,v|
         self.send(("#{k}="), v)
       end
